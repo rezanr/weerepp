@@ -1,0 +1,133 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>@ViewData["Title"]</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="~/img/favicon.png" rel="icon">
+    <link href="~/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://cdn.syncfusion.com/20.2.0.43/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <!--Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/1.1.9/js/libs/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.syncfusion.com/20.2.0.43/js/web/ej.web.all.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <!-- Vendor CSS Files -->
+    @*<link href="~/lib/aos/aos.css" rel="stylesheet">*@
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/lib/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/lib/remixicon/remixicon.css" rel="stylesheet">
+    <link href="~/lib/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="~/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/mobilstyle.css">
+</head>
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+      
+            <nav id="navbar" class="navbar">
+                <div class="container d-flex justify-content-lg-end">
+                    <ul>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <li><a class="nav-link scrollto" asp-area="" asp-controller="Images_TabelPortFolio" asp-action="Index">Images Tabel</a></li>
+                            <li><a class="nav-link scrollto" asp-area="" asp-controller="NokiaPortFolio" asp-action="Index">Nokia</a></li>
+                            <li class="dropdown">
+                                <a asp-area=""><span>Apple</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a asp-area="" asp-controller="IphonePortFolio" asp-action="Index">Iphon</a></li>
+                                    <li><a asp-area="" asp-controller="ImacPortFolio" asp-action="Index">Imac</a></li>
+                                    <li><a asp-area="" asp-controller="IpadPortFolio" asp-action="Index">Ipad</a></li>
+                                    <li><a asp-area="" asp-controller="AppleWatchPortFolio" asp-action="Index">Apple Watch</a></li>
+                                    <li><a asp-area="" asp-controller="MacbookPortFolio" asp-action="Index">Mac Book</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a asp-area=""><span>Samsung</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a asp-area="" asp-controller="Galaxy_A_PortFolio" asp-action="Index">Galaxy A</a></li>
+                                    <li><a asp-area="" asp-controller="Galaxy_J_PortFolio" asp-action="Index">Galaxy J</a></li>
+                                    <li><a asp-area="" asp-controller="Galaxy_S_PortFolio" asp-action="Index">Galaxy S</a></li>
+                                    <li><a asp-area="" asp-controller="Galaxy_X_PortFolio" asp-action="Index">Galaxy X_Cover</a></li>
+                                    <li><a asp-area="" asp-controller="GalaxyNotePortFolio" asp-action="Index">Galaxy Note</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a asp-area=""><span>Motorola</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a asp-area="" asp-controller="Motorola_E_PortFolio" asp-action="Index">Motorola E</a></li>
+                                    <li><a asp-area="" asp-controller="Motorola_G_Portfolio" asp-action="Index">Motorola G</a></li>
+                                    <li><a asp-area="" asp-controller="MotorolaEdge_Portfolio" asp-action="Index">Motorola Edge</a></li>
+                                    <li><a asp-area="" asp-controller="MotorolaOne_Portfolio" asp-action="Index">Motorola One</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a asp-area=""><span>Sony</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a asp-area="" asp-controller="Xperia_X_PortFilio" asp-action="Index">Xperia X</a></li>
+                                    <li><a asp-area="" asp-controller="Xperia_Z_Pootfolio" asp-action="Index">Xperia Z</a></li>
+                                    <li><a asp-area="" asp-controller="XperiaTopPortFolil" asp-action="Index">Xperia Top</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a asp-area=""><span>Huawei</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a asp-area="" asp-controller="Huawei_Mate_PortFolio" asp-action="Index">Huawei Mate</a></li>
+                                    <li><a asp-area="" asp-controller="Huawei_P_PortFolio" asp-action="Index">Huawei P</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li><a class="nav-link scrollto" asp-area="" asp-controller="OneplusPortFolio" asp-action="Index">One Plus</a></li>
+                            <li><a class="nav-link scrollto" asp-area="" asp-controller="CpmputerPortFolio" asp-action="Index">Computer</a></li>
+                        }
+
+                        <partial name="_LoginPartial" />
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </div>
+            </nav>
+
+            <!-- .navbar -->
+     
+
+    </header>
+    <section id="spes"></section>
+    <section id="spes"></section>
+    <!-- End Header -->
+    <div>
+        @RenderBody()
+    </div>
+    @RenderSection("Scripts", required: false)
+    <section class="spes"></section>
+    <!-- ======= Footer ======= -->
+    <!-- End Footer -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    @*<script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>*@
+    <!-- Vendor JS Files -->
+    <script src="~/lib/purecounter/purecounter_vanilla.js"></script>
+    <script src="~/lib/aos/aos.js"></script>
+    <script src="~/lib/glightbox/js/glightbox.min.js"></script>
+    <script src="~/lib/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/lib/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/js/main.js"></script>
+
+</body>
+</html>

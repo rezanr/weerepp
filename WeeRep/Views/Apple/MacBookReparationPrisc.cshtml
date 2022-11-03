@@ -1,0 +1,111 @@
+﻿@model   HomeViweModel
+@{
+    ViewData["Title"] = "MacBookReparationPrisc";
+}
+
+<section id="iphone">
+    <div class="iphone-container container">
+        <div class="section-title">
+            <h2>APPLE</h2>
+            <p>MAKBOOK REPARATION</p>
+        </div>
+    </div>
+</section>
+<!-- ======= iphone-img-contener Section ======= -->
+<section class="Phone-card-container container">
+    <div class="row">
+        @foreach (var Item in Model.MacbookReparation)
+        {
+       
+            <div class="card col-lg-4 col-md-5 d-flex align-items-stretch mt-4">
+                <div class="card-img">
+                    <img src="~/img/Apple/MacBook/@Item.ImageName" alt="...">
+                </div>
+                <button class=" collapsible">@Item.PhoneName</button>
+                <div class="content">
+                    <table class="table-fill">
+                        <thead>
+                            <tr>
+                                <th class="text-left">YDELSE</th>
+                                <th class="text-left">PRIS</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-hover">
+                            <tr>
+                                @if (Item.Skærm != null && Item.P_Skærm != null)
+                                {
+                                    <td class="text-left">@Item.Skærm</td>
+                                    <td class="text-left">@Item.P_Skærm</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Tastetur != null && Item.P_Tastetur != null)
+                                {
+                                    <td class="text-left">@Item.Tastetur</td>
+                                    <td class="text-left">@Item.P_Tastetur</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Batteri != null && Item.P_Batteri != null)
+                                {
+                                    <td class="text-left">@Item.Batteri</td>
+                                    <td class="text-left">@Item.P_Batteri</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Styresystem != null && Item.P_Styresystem != null)
+                                {
+                                    <td class="text-left">@Item.Styresystem</td>
+                                    <td class="text-left">@Item.P_Styresystem</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.TrackPad != null && Item.P_TrackPad != null)
+                                {
+                                    <td class="text-left">@Item.TrackPad</td>
+                                    <td class="text-left">@Item.P_TrackPad</td>
+                                }
+                            </tr>
+
+                            <tr>
+                                @if (Item.Højtale != null && Item.P_Højtale != null)
+                                {
+                                    <td class="text-left">@Item.Højtale</td>
+                                    <td class="text-left">@Item.P_Højtale</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Blæser != null && Item.P_Blæser != null)
+                                {
+                                    <td class="text-left">@Item.Blæser</td>
+                                    <td class="text-left">@Item.P_Blæser</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Ladestik != null && Item.P_Ladestik != null)
+                                {
+                                    <td class="text-left">@Item.Ladestik</td>
+                                    <td class="text-left">@Item.P_Ladestik</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Bundplade != null && Item.P_Bundplade != null)
+                                {
+                                    <td class="text-left">@Item.Bundplade</td>
+                                    <td class="text-left">@Item.P_Bundplade</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Fejlfinding != null && Item.P_Fejlfinding != null)
+                                {
+                                    <td class="text-left">@Item.Fejlfinding</td>
+                                    <td class="text-left">@Item.P_Fejlfinding</td>
+                                }
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            }
+        </div>
+</section>

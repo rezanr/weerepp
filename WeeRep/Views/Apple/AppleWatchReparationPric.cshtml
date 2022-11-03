@@ -1,0 +1,96 @@
+﻿
+@model HomeViweModel
+@{
+    ViewData["Title"] = "Appl Watch";
+}
+
+<!-- ======= iphone-container ======= -->
+<section id="iphone">
+    <div class="iphone-container container">
+        <div class="section-title">
+            <h2>APPLE</h2>
+            <p>APPLE WATCH REPARATION</p>
+        </div>
+    </div>
+</section>
+<!-- ======= iphone-img-contener Section ======= -->
+<section class="iphone-card-container container">
+
+    <div class="row">
+        @foreach (var Item in Model.AppleWatchReprationPreis)
+        {
+            <div class="card col-lg-4 col-md-5 d-flex align-items-stretch mt-4">
+                <div class="card-img">
+                    <img src="~/img/Apple/Apple Watch/@Item.ImageName " alt="...">
+                </div>
+                <button class=" collapsible">@Item.PhoneName</button>
+
+                <div class="content">
+                    <table class="table-fill">
+                        <thead>
+                            <tr>
+                                <th class="text-left">YDELSE</th>
+                                <th class="text-left">PRIS</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="table-hover">
+                            <tr>
+                                @if (Item.Skærm_A != null && Item.P_Skærm_A != null)
+                                {
+                                    <td class="text-left">@Item.Skærm_A</td>
+                                    <td class="text-left">@Item.P_Skærm_A</td>
+                                }
+                            </tr>
+
+                            <tr>
+                                @if (Item.Skærm_B != null && Item.P_Skærm_B != null)
+                                {
+                                    <td class="text-left">@Item.Skærm_B</td>
+                                    <td class="text-left">@Item.P_Skærm_B</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Skærm_C != null && Item.P_Skærm_C != null)
+                                {
+                                    <td class="text-left">@Item.Skærm_C</td>
+                                    <td class="text-left">@Item.P_Skærm_C</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Skærm_D != null && Item.P_Skærm_D != null)
+                                {
+                                    <td class="text-left">@Item.Skærm_D</td>
+                                    <td class="text-left">@Item.P_Skærm_D</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Batteri_A != null && Item.P_Batteri_A != null)
+                                {
+                                    <td class="text-left">@Item.Batteri_A</td>
+                                    <td class="text-left">@Item.P_Batteri_A</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Batteri_B != null && Item.P_Batteri_B != null)
+                                {
+                                    <td class="text-left">@Item.Batteri_B</td>
+                                    <td class="text-left">@Item.P_Batteri_B</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Fejlfinding != null && Item.p_Fejlfinding != null)
+                                {
+                                    <td class="text-left">@Item.Fejlfinding</td>
+                                    <td class="text-left">@Item.p_Fejlfinding</td>
+                                }
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+

@@ -1,0 +1,72 @@
+﻿@model HomeViweModel
+
+@{
+    ViewData["Title"] = "Sony";
+}
+
+<section>
+    <div class="Phone-container container">
+        <div class="section-title">
+            <h2>REPARATION</h2>
+            <p>SONY SERIEN</p>
+        </div>
+        <div class="HeroImage">
+            <img src="~/img/clients/Sony.png" alt="">
+        </div>
+        <p class="content_Text">
+            Er din Huawei smartphone ikke længere brugsdygtig? Du er kommet til det helt rigtige sted, vores side med Huawei smartphone reparationer.<br />
+            Vores hårdtarbejdende og autoriserede teknikere sørger for at få din Huawei smartphone tilbage i perfekt stand.<br />
+            Med i reparationen får du 2 års garanti. Find prisen på din Huawei smartphone reparation herunder.<br />
+        </p>
+    </div>
+</section>
+<section class="Phone-img-contener">
+    <div class="container" data-aos="fade-up">
+        <div class="row">
+            <div class=" col-lg-3 col-md-5 d-flex align-items-stretch mt-4 repararion-content" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card  text-center">
+
+                    <a asp-area="" asp-controller="Sony" asp-action="SonyXperia_Z">
+                        <div class="img-box">
+                            @if (Model.Images.ElementAt(22).ID == 23)
+                            {
+                                <div class="img"><img src="~/img/GlaobalImages/@Model.Images.ElementAt(22).ImageName" alt=""></div>
+                            }
+                        </div>
+                    </a>
+                    <h3>XPERIA Z_SERIEN</h3>
+                </div>
+            </div>
+
+            <div class=" col-lg-3 col-md-5 d-flex align-items-stretch mt-4 repararion-content" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card  text-center">
+
+                    <a asp-area="" asp-controller="Sony" asp-action="SonyXperia_X">
+                        <div class="img-box">
+                            @if (Model.Images.ElementAt(23).ID == 24)
+                            {
+                                <div class="img"><img src="~/img/GlaobalImages/@Model.Images.ElementAt(23).ImageName" alt=""></div>
+                            }
+                        </div>
+                    </a>
+                    <h3>XPERIA X_SERIEN</h3>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-md-5 d-flex align-items-stretch mt-4 repararion-content" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card  text-center">
+
+                    <a asp-area="" asp-controller="Sony" asp-action="SonyXperia_Top">
+                        <div class="img-box">
+                            @if (Model.Images.ElementAt(24).ID == 25)
+                            {
+                                <div class="img"><img src="~/img/GlaobalImages/@Model.Images.ElementAt(24).ImageName" alt=""></div>
+                            }
+                        </div>
+                    </a>
+                    <h3>XPERIA TOP MODELLER</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

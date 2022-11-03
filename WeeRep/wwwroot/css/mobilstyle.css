@@ -1,0 +1,484 @@
+
+/* --------Hom page-- 1280px------- */
+@media (min-width: 1280px) {
+
+    /* reparation page */
+    .centered {
+        top: 25%;
+        left: 0%;
+    }
+
+    .container-heroimg {
+        width: 100%;
+        text-align: center;
+    }
+
+        .container-heroimg h1 {
+            font-size: 50px;
+            padding-top: 0px;
+            margin-top: 0px;
+            width: 100%;
+            line-height: 48px;
+        }
+
+        .container-heroimg h2 {
+            font-size: 23px;
+            line-height: 40px;
+            font-weight: 400;
+            padding: 70px;
+            width: 100%;
+        }
+
+    .repration .img-box {
+        padding: 50px;
+    }
+   
+}
+/* --------Hom page-- 1024px------- */
+@media (min-width: 1024px) {
+    .testimonials {
+        background-attachment: fixed;
+    }
+
+    #hero {
+        background-attachment: fixed;
+    }
+    /* reparation page */
+
+    .centered {
+        top: 25%;
+        left: 0%;
+    }
+
+    .container-heroimg {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Phone-img-contener .row .col-md-5 {
+        width: 33%;
+    }
+    .container-heroimg h1 {
+        font-size: 50px;
+        padding-top: 0px;
+        margin-top: 0px;
+        width: 100%;
+        line-height: 48px;
+    }
+
+    .container-heroimg h2 {
+        font-size: 23px;
+        line-height: 40px;
+        font-weight: 400;
+        padding: 70px;
+        width: 100%;
+    }
+
+    .repration .img-box {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    .testimonials .testimonial-item p {
+        width: 80%;
+    }
+
+    .get-started-btn {
+        padding: 7px 20px 8px 20px;
+        margin-right: 15px;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+    }
+}
+/* --------Hom page-- 912px------- */
+@media (max-width: 912px) {
+
+    .container {
+        max-width: 849px;
+    }
+
+    .centered {
+        top: 25%;
+        left: 0%;
+    }
+
+    .container-heroimg {
+        width: 100%;
+        height: 100%;
+    }
+
+        .container-heroimg h1 {
+            font-size: 40px;
+            padding-top: 0px;
+            margin-top: 0px;
+            width: 100%;
+            line-height: 48px;
+        }
+
+        .container-heroimg h2 {
+            font-size: 18px;
+            line-height: 40px;
+            font-weight: 400;
+            padding: 70px;
+            width: 100%;
+        }
+
+    #hero h1 {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    .cent-center .row .col-md-5 {
+        width: 50%;
+    }
+
+    .repration .img-box {
+        padding: 80px;
+    }
+    .Phone-img-contener .row .col-md-5 {
+        width: 50%;
+    }
+    .Phone-img-contener .img-box {
+        width: 390px;
+    }
+
+    .Services .image {
+        text-align: center;
+    }
+
+
+    .section-title p {
+        font-size: 20px;
+    }
+
+}
+/* --------Hom page-- 768px------- */
+@media (max-width: 768px) {
+
+
+    section {
+        padding: 20px;
+    }
+
+    #spes {
+        height: 50px;
+    }
+
+    .container-heroimg h1 {
+        font-size: 45px;
+        padding-top: 0px;
+        margin-top: 0px;
+        width: 100%;
+        line-height: 38px;
+    }
+
+    .container-heroimg h2 {
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: 600;
+        padding: 30px;
+        width: 100%;
+    }
+    .Phone-img-contener .row .col-md-5 {
+        width: 50%;
+    }
+
+    .Phone-img-contener .img-box {
+        width: 340px;
+    }
+}
+/* --------Hom page-- 540px------- */
+@media (max-width: 540px) {
+
+    .centered {
+        top: 25%;
+        left: 0%;
+    }
+
+    .container-heroimg {
+        width: 100%;
+        text-align: center;
+    }
+
+        .container-heroimg h1 {
+            font-size: 30px;
+            padding-top: 0px;
+            margin-top: 0px;
+            width: 100%;
+            line-height: 48px;
+        }
+
+        .container-heroimg h2 {
+            font-size: 20px;
+            line-height: 40px;
+            font-weight: 400;
+            padding: 70px;
+            width: 100%;
+        }
+
+    .repration .img-box {
+        padding: 30px;
+    }
+    .Phone-img-contener .row .col-md-5 {
+        width: 100%;
+    }
+
+    .Phone-img-contener .img-box {
+        width: 390px;
+    }
+    #footer {
+        text-align: center;
+    }
+
+        #footer .footer-top .container .d-flex {
+            display: block !important;
+            font-size: 20px;
+        }
+}
+/* --------Hom page--414px------- */
+@media (max-width: 414px) {
+
+    #header .logo img {
+        max-height: 40px;
+    }
+
+    .centered {
+        top: 25%;
+        left: 0%;
+    }
+
+    .container-heroimg {
+        width: 100%;
+        text-align: center;
+    }
+
+        .container-heroimg:before {
+            bottom: 0px;
+        }
+
+    .container-heroimg {
+        height: 100%;
+    }
+
+        .container-heroimg h1 {
+            font-size: 22px;
+            padding-top: 0px;
+            margin-top: 0px;
+            width: 100%;
+            line-height: 38px;
+        }
+
+        .container-heroimg h2 {
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 600;
+            padding: 5px;
+            width: 100%;
+        }
+
+    .cent-center .row .col-md-5 {
+        width: 100%;
+    }
+
+    .repration .img-box {
+        padding: 100px;
+    }
+
+    .section-title p {
+        font-size: 25px;
+    }
+
+    .about img {
+        height: 100%;
+        margin-left: 0px;
+    }
+
+    #footer {
+        text-align: center;
+        font-size: 20px;
+    }
+
+        #footer .footer-top .footer-info p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #footer .footer-top .footer-links ul li {
+            text-align: center;
+            font-size: 22px;
+            margin-left: 70px;
+        }
+
+        #footer .footer-top .footer-links h4 {
+            font-size: 22px;
+        }
+    /* iphone-contener */
+    .Phone-img-contener .img-box {
+        width: 342px;
+    }
+
+    #footer .footer-top .container .d-flex {
+        display: block !important;
+        font-size: 18px;
+    }
+}
+
+@media(max-width:412px) {
+}
+/* --------Hom page--390px------- */
+@media (max-width: 393px) {
+    #hero h1 {
+        font-size: 19px;
+    }
+
+    #hero h2 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    /* iphone-contener */
+    .Phone-img-contener .img-box {
+        width: 322px;
+    }
+    .HeroImage img {
+        width: 149px;
+        margin-bottom: 50px;
+    }
+}
+/* --------Hom page-- 375px------- */
+@media (max-width: 375px) {
+
+    /* iphone-contener */
+    .Phone-img-contener .img-box {
+        width: 317px;
+    }
+    /* reparation page */
+  /*  .repration .img-box {
+        width: 350px;
+    }*/
+}
+/* --------Hom page-- 360px------- */
+@media (max-width: 360px) {
+
+    /* iphone-contener */
+    .Phone-img-contener .img-box {
+        width: 300px;
+    }
+    /* reparation page */
+    .repration .img-box {
+        padding: 70px;
+    }
+}
+/* --------Hom page-- 280px------- */
+@media (max-width: 280px) {
+    #hero h1 {
+        font-size: 14px;
+        padding-top: 20px;
+        margin-top: 40px;
+    }
+
+    #hero h2 {
+        font-size: 9px;
+        line-height: 15px;
+        font-weight: 600;
+        padding: 0 20px;
+    }
+
+    .Services {
+        margin-top: -50px;
+    }
+
+        .Services .row {
+            gap: 0;
+        }
+
+    section {
+        padding: 10px;
+    }
+
+    #spes {
+        height: 70px;
+    }
+
+    .section-title p {
+        font-size: 12px;
+    }
+
+    .section-title h2 {
+        font-size: 8px;
+    }
+
+    .Services .icon-box i {
+        font-size: 20px;
+    }
+
+    .Services .icon-box h4 {
+        font-size: 13px;
+    }
+
+    .Services .icon-box p {
+        font-size: 10px;
+    }
+
+    /* iphone-contener */
+ 
+    .Phone-img-contener .row .col-md-5 {
+        width: 100%;
+    }
+
+    .Phone-img-contener .img-box {
+        width: 220px;
+    }
+        .Phone-img-contener .img-box img {
+            width: 150px;
+        }
+ 
+    /* reparation page */
+    .repration .img-box {
+         padding: 40px; 
+    }
+
+
+    .info-text h4 {
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .info-text p {
+        text-align: left;
+        padding: 0;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    /* footer */
+    #footer .footer-top .footer-links a {
+        font-size: 12px;
+        margin-bottom: 50px;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+        #footer .footer-top .footer-links h4 {
+            font-size: 22px;
+            margin-top: 10px;
+        }
+
+        #footer .footer-top .container .d-flex {
+            display: block !important;
+            font-size: 15px;
+        }
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/

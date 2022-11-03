@@ -1,0 +1,172 @@
+﻿@model Core.Entities.Apple.MacbookReparation
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_PortfolioLayout.cshtml";
+}
+
+<div class="container">
+    <h3 class="text-danger">Are you sure you want to delete this?</h3>
+    <div class="section-title">
+        <h2>Delete</h2>
+        <p> MacBook </p>
+    </div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PhoneName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PhoneName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ImageName)
+        </dt>
+        <dd class="col-sm-10">
+            <img src="~/img/Apple/MacBook/@Model.ImageName" class="img-thumbnail Portfolio-img" alt="@Model.ImageName" />
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Skærm)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Skærm)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.P_Skærm)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.P_Skærm)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tastetur)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tastetur)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.P_Tastetur)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.P_Tastetur)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Batteri)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Batteri)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.P_Batteri)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.P_Batteri)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Styresystem)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Styresystem)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.P_Styresystem)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.P_Styresystem)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TrackPad)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TrackPad)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.P_TrackPad)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.P_TrackPad)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Højtale)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Højtale)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.P_Højtale)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.P_Højtale)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Blæser)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Blæser)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.P_Blæser)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.P_Blæser)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Ladestik)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ladestik)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.P_Ladestik)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.P_Ladestik)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Bundplade)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Bundplade)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.P_Bundplade)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.P_Bundplade)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Fejlfinding)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Fejlfinding)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.P_Fejlfinding)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.P_Fejlfinding)
+        </dd>
+
+    </dl>
+
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-outline-dark">Back to List</a>
+    </form>
+</div>
+
+<style>
+    .col-sm-10 {
+        width: 50%;
+    }
+
+    .col-sm-2 {
+        width: 50%;
+    }
+
+    .Portfolio-img {
+        width: 75px;
+        height: 64px;
+    }
+</style>

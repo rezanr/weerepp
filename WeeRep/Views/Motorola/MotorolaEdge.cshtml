@@ -1,0 +1,142 @@
+﻿@model   HomeViweModel
+@{
+    ViewData["Title"] = "MotorolaEdge";
+}
+<section class="Phone-card-container container">
+    <div class="Phone-container container">
+        <div class="section-title">
+            <h2>MOTOROLA</h2>
+            <p>EDGE_SERIEN</p>
+        </div>
+    </div>
+    <div class="row">
+        @foreach (var Item in Model.MotorolaEdge_Serien)
+        {
+            <div class="card col-lg-4 col-md-5 d-flex align-items-stretch mt-4">
+                <div class="card-img">
+                    <img src="~/img/Motorola/Motorola_Edge/@Item.ImageName"  alt="...">
+                </div>
+                <button class=" collapsible">@Item.PhoneName</button>
+                <div class="content">
+                    <table class="table-fill">
+                        <thead>
+                            <tr>
+                                <th class="text-left">YDELSE</th>
+                                <th class="text-left">PRIS</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="table-hover">
+                            <tr>
+                                @if (Item.Skærm !=null && Item.P_Skærm !=null)
+                                {
+                                    <td class="text-left">@Item.Skærm</td>
+                                    <td class="text-left">@Item.P_Skærm</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Skærm_B !=null && Item.P_Skærm_B !=null)
+                                {
+                                    <td class="text-left">@Item.Skærm_B</td>
+                                    <td class="text-left">@Item.P_Skærm_B</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Batteri !=null && Item.P_Batteri !=null)
+                                {
+                                    <td class="text-left">@Item.Batteri</td>
+                                    <td class="text-left">@Item.P_Batteri</td>
+                                }
+                            </tr>
+
+                            <tr>
+                                @if (Item.Bagglas !=null && Item.P_Bagglas !=null)
+                                {
+                                    <td class="text-left">@Item.Bagglas</td>
+                                    <td class="text-left">@Item.P_Bagglas</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Bagglas_Ramme !=null && Item.P_Bagglas_Ramme !=null)
+                                {
+                                    <td class="text-left">@Item.Bagglas_Ramme</td>
+                                    <td class="text-left">@Item.P_Bagglas_Ramme</td>
+                                }
+                            </tr>
+
+                            <tr>
+                                @if (Item.Ørehøjtaler !=null && Item.P_Ørehøjtaler !=null)
+                                {
+                                    <td class="text-left">@Item.Ørehøjtaler</td>
+                                    <td class="text-left">@Item.P_Ørehøjtaler</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.FrontKamera !=null && Item.P_FrontKamera !=null)
+                                {
+                                    <td class="text-left">@Item.FrontKamera</td>
+                                    <td class="text-left">@Item.P_FrontKamera</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Bagkamera !=null && Item.P_Bagkamera !=null)
+                                {
+                                    <td class="text-left">@Item.Bagkamera</td>
+                                    <td class="text-left">@Item.P_Bagkamera</td>
+                                }
+                            </tr>
+                            <tr>
+                                @if (Item.Ladestik !=null && Item.P_Ladestik !=null)
+                                {
+                                    <td class="text-left">@Item.Ladestik</td>
+                                    <td class="text-left">@Item.P_Ladestik</td>
+                                }
+                            </tr>
+
+                            <tr>
+                                @if (Item.Højtale !=null && Item.P_Højtale !=null)
+                                {
+                                    <td class="text-left">@Item.Højtale</td>
+                                    <td class="text-left">@Item.P_Højtale</td>
+                                }
+                            </tr>
+
+                            <tr>
+                                @if (Item.Vibrator !=null && Item.P_Vibrator !=null)
+                                {
+                                    <td class="text-left">@Item.Vibrator</td>
+                                    <td class="text-left">@Item.P_Vibrator</td>
+                                }
+                            </tr>
+
+                            <tr>
+                                @if (Item.Tænd_Sluk !=null && Item.P_Tænd_Sluk !=null)
+                                {
+                                    <td class="text-left">@Item.Tænd_Sluk</td>
+                                    <td class="text-left">@Item.P_Tænd_Sluk</td>
+                                }
+                            </tr>
+
+                            <tr>
+                                @if (Item.Volume_Lydløs !=null && Item.P_Volume_Lydløs !=null)
+                                {
+                                    <td class="text-left">@Item.Volume_Lydløs</td>
+                                    <td class="text-left">@Item.P_Volume_Lydløs</td>
+                                }
+                            </tr>
+
+                            <tr>
+                                @if (Item.Fejlfinding !=null && Item.P_Fejlfinding !=null)
+                                {
+                                    <td class="text-left">@Item.Fejlfinding</td>
+                                    <td class="text-left">@Item.P_Fejlfinding</td>
+                                }
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        }
+    </div>
+</section>

@@ -1,0 +1,132 @@
+﻿@model HomeViweModel
+@{
+    ViewData["Title"] = "Computer";
+}
+
+<section class="Phone-card-container container">
+    <div class="Phone-container container">
+        <div class="section-title">
+            <h2>REPARATION</h2>
+            <p>COMPUTER</p>
+        </div>
+        <div class="HeroImage">
+            <img src="~/img/clients/Computer.png" alt=null>
+        </div>
+        <p class="content_Text">
+            Er din computere ikke længere brugsdygtig? Du er kommet til det helt rigtige sted, vores side med Computer reparationer.<br />
+            Vores hårdtarbejdende og autoriserede teknikere sørger for at få din computer kommer tilbage i perfekt stand.<br />
+            Med i reparationen får du 2 års garanti. Find prisen på din computer smartphone reparation herunder.
+        </p>
+    </div>
+    <div class="row">
+        @foreach (var Item in Model.CpmputerReparationPrice)
+        {
+        <div class="card col-lg-4 col-md-5 d-flex align-items-stretch mt-4">
+            <div class="card-img">
+                <img src="~/img/Computer/@Item.ImageName" alt="...">
+            </div>
+            <button class=" collapsible">@Item.PhoneName</button>
+            <div class="content">
+                <table class="table-fill">
+                    <thead>
+                        <tr>
+                            <th class="text-left">YDELSE</th>
+                            <th class="text-left">PRIS</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="table-hover">
+
+                        <tr>
+                            @if (Item.Ydelse_A != null && Item.Pris_A != null)
+                            {
+                                <td class="text-left">@Item.Ydelse_A</td>
+                                <td class="text-left">@Item.Pris_A</td>
+                            }
+                        </tr>
+                        <tr>
+                            @if (Item.Ydelse_B != null && Item.Pris_B != null)
+                            {
+                                <td class="text-left">@Item.Ydelse_B</td>
+                                <td class="text-left">@Item.Pris_B</td>
+                            }
+                        </tr>
+                        <tr>
+                            @if (Item.Ydelse_C != null && Item.Pris_C != null)
+                            {
+                                <td class="text-left">@Item.Ydelse_C</td>
+                                <td class="text-left">@Item.Pris_C</td>
+                            }
+                        </tr>
+                        <tr>
+                            @if (Item.Ydelse_D != null && Item.Pris_D != null)
+                            {
+                                <td class="text-left">@Item.Ydelse_D</td>
+                                <td class="text-left">@Item.Pris_D</td>
+                            }
+                        </tr>
+                        <tr>
+                            @if (Item.Ydelse_E != null && Item.Pris_E != null)
+                            {
+                                <td class="text-left">@Item.Ydelse_E</td>
+                                <td class="text-left">@Item.Pris_E</td>
+                            }
+                        </tr>
+                        <tr>
+                            @if (Item.Ydelse_F != null && Item.Pris_F != null)
+                            {
+                                <td class="text-left">@Item.Ydelse_F</td>
+                                <td class="text-left">@Item.Pris_F</td>
+                            }
+                        </tr>
+                        <tr>
+                            @if (Item.Ydelse_G != null && Item.Pris_G != null)
+                            {
+                                <td class="text-left">@Item.Ydelse_G</td>
+                                <td class="text-left">@Item.Pris_G</td>
+                            }
+                        </tr>
+                        <tr>
+                            @if (Item.Ydelse_H != null && Item.Pris_H != null)
+                            {
+                                <td class="text-left">@Item.Ydelse_H</td>
+                                <td class="text-left">@Item.Pris_H</td>
+                            }
+                        </tr>
+
+                        <tr>
+                            @if (Item.Ydelse_I != null && Item.Pris_I != null)
+                            {
+                                <td class="text-left">@Item.Ydelse_I</td>
+                                <td class="text-left">@Item.Pris_I</td>
+                            }
+                        </tr>
+                        <tr>
+                            @if (Item.Ydelse_K != null && Item.Pris_K != null)
+                            {
+                                <td class="text-left">@Item.Ydelse_K</td>
+                                <td class="text-left">@Item.Pris_K</td>
+                            }
+                        </tr>
+                        <tr>
+                            @if (Item.Ydelse_L != null && Item.Pris_L != null)
+                            {
+                                <td class="text-left">@Item.Ydelse_L</td>
+                                <td class="text-left">@Item.Pris_L</td>
+                            }
+                        </tr>
+                        <tr>
+                            @if (Item.Ydelse_M != null && Item.Pris_M != null)
+                            {
+                                <td class="text-left">@Item.Ydelse_M</td>
+                                <td class="text-left">@Item.Pris_M</td>
+                            }
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        }
+    </div>
+</section>

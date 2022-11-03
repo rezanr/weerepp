@@ -1,0 +1,186 @@
+﻿@model CpmputerPortFolioModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_PortfolioLayout.cshtml";
+}
+
+<div class="container">
+    <div class="section-title">
+        <h2>Create</h2>
+        <p> Computer </p>
+    </div>
+    <hr />
+    <div class="form_content">
+        <div class="col md-3">
+            <form asp-action="Create" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="PhoneName" class="form-label"></label>
+                        <input asp-for="PhoneName" class="form-control" />
+                        <span asp-validation-for="PhoneName" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="ImageName" class="form-label"></label>
+                        <input asp-for="File" class="form-control" />
+                        <span asp-validation-for="ImageName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Ydelse_A" class="form-label"></label>
+                        <input asp-for="Ydelse_A" class="form-control" />
+                        <span asp-validation-for="Ydelse_A" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="Pris_A" class="form-label"></label>
+                        <input asp-for="Pris_A" class="form-control" />
+                        <span asp-validation-for="Pris_A" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Ydelse_B" class="form-label"></label>
+                        <input asp-for="Ydelse_B" class="form-control" />
+                        <span asp-validation-for="Ydelse_B" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="Pris_B" class="form-label"></label>
+                        <input asp-for="Pris_B" class="form-control" />
+                        <span asp-validation-for="Pris_B" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Ydelse_C" class="form-label"></label>
+                        <input asp-for="Ydelse_C" class="form-control" />
+                        <span asp-validation-for="Ydelse_C" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="Pris_C" class="form-label"></label>
+                        <input asp-for="Pris_C" class="form-control" />
+                        <span asp-validation-for="Pris_C" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Ydelse_D" class="form-label"></label>
+                        <input asp-for="Ydelse_D" class="form-control" />
+                        <span asp-validation-for="Ydelse_D" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="Pris_D" class="form-label"></label>
+                        <input asp-for="Pris_D" class="form-control" />
+                        <span asp-validation-for="Pris_D" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Ydelse_E" class="form-label"></label>
+                        <input asp-for="Ydelse_E" class="form-control" />
+                        <span asp-validation-for="Ydelse_E" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="Pris_E" class="form-label"></label>
+                        <input asp-for="Pris_E" class="form-control" />
+                        <span asp-validation-for="Pris_E" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Ydelse_F" class="form-label"></label>
+                        <input asp-for="Ydelse_F" class="form-control" />
+                        <span asp-validation-for="Ydelse_F" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="Pris_F" class="form-label"></label>
+                        <input asp-for="Pris_F" class="form-control" />
+                        <span asp-validation-for="Pris_F" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Ydelse_G" class="form-label"></label>
+                        <input asp-for="Ydelse_G" class="form-control" />
+                        <span asp-validation-for="Ydelse_G" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="Pris_G" class="form-label"></label>
+                        <input asp-for="Pris_G" class="form-control" />
+                        <span asp-validation-for="Pris_G" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Ydelse_H" class="form-label"></label>
+                        <input asp-for="Ydelse_H" class="form-control" />
+                        <span asp-validation-for="Ydelse_H" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="Pris_H" class="form-label"></label>
+                        <input asp-for="Pris_H" class="form-control" />
+                        <span asp-validation-for="Pris_H" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Ydelse_I" class="form-label"></label>
+                        <input asp-for="Ydelse_I" class="form-control" />
+                        <span asp-validation-for="Ydelse_I" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="Pris_I" class="form-label"></label>
+                        <input asp-for="Pris_I" class="form-control" />
+                        <span asp-validation-for="Pris_I" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Ydelse_K" class="form-label"></label>
+                        <input asp-for="Ydelse_K" class="form-control" />
+                        <span asp-validation-for="Ydelse_K" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="Pris_K" class="form-label"></label>
+                        <input asp-for="Pris_K" class="form-control" />
+                        <span asp-validation-for="Pris_K" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Ydelse_L" class="form-label"></label>
+                        <input asp-for="Ydelse_L" class="form-control" />
+                        <span asp-validation-for="Ydelse_L" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="Pris_L" class="form-label"></label>
+                        <input asp-for="Pris_L" class="form-control" />
+                        <span asp-validation-for="Pris_L" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Ydelse_M" class="form-label"></label>
+                        <input asp-for="Ydelse_M" class="form-control" />
+                        <span asp-validation-for="Ydelse_M" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="Pris_M" class="form-label"></label>
+                        <input asp-for="Pris_M" class="form-control" />
+                        <span asp-validation-for="Pris_M" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="text-lg-end">
+                        <input type="submit" value="Creat" class="btn btn-success" />
+                    </div>
+                    <div>
+                        <a asp-action="Index" class="btn btn-outline-dark">Back to List</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

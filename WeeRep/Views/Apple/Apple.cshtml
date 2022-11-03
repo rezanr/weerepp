@@ -1,0 +1,96 @@
+﻿@model HomeViweModel
+@{
+    ViewData["Title"] = "Apple";
+}
+
+<!-- ======= iphone-container ======= -->
+<section>
+    <div class="Phone-container container">
+        <div class="section-title">
+            <h2>APPLE</h2>
+            <p> REPARATION</p>
+        </div>
+        <div class="HeroImage">
+            <img src="~/img/Apple/AppleLogo.png" alt="">
+        </div>
+        <p class="content_Text">
+            Hos WeeRep kan vi både tilbyde markedets bedste priser samt give dig den bedste service hele vejen rundt på <span> iPhone reparation</span> – uanset om du ønsker at købe,
+            sælge eller reparere.<br> Vi både opkøber samt sælger istandsatte smartphones & tablets og kan reparere alle slags tekniske enheder såsom smartphones, tablets og computere.
+        </p>
+    </div>
+</section>
+<section class="Phone-img-contener">
+    <div class="container" data-aos="fade-up">
+        <div class="row">
+            <div class=" col-lg-3 col-md-5 d-flex align-items-stretch mt-4 repararion-content" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card  text-center">
+                    <a asp-area="" asp-controller="Apple" asp-action="IphoneReparationPric">
+                        <div class="img-box">
+                           
+                            @if (Model.Images.ElementAt(6).ID == 7)
+                            {
+                                <div class="img"><img src="~/img/GlaobalImages/@Model.Images.ElementAt(6).ImageName" alt=""></div>
+                            }
+                        </div>
+                    </a>
+                    <h3>Iphone</h3>
+                </div>
+            </div>
+
+            <div class=" col-lg-3 col-md-5 d-flex align-items-stretch mt-4 repararion-content" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card  text-center">
+                    <a asp-area="" asp-controller="Apple" asp-action="AppleWatchReparationPric">
+                        <div class="img-box">
+                            @if (Model.Images.ElementAt(7).ID == 8)
+                            {
+                                <div class="img"><img src="~/img/GlaobalImages/@Model.Images.ElementAt(7).ImageName" alt=""></div>
+                            }
+                        </div>
+                    </a>
+                    <h3>Apple Watch</h3>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-md-5 d-flex align-items-stretch mt-4 repararion-content" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card  text-center">
+                    <a asp-area="" asp-controller="Apple" asp-action="IpadReparationPrisc">
+                        <div class="img-box ">
+                            @if (Model.Images.ElementAt(8).ID == 9)
+                            {
+                                <div class="img"><img src="~/img/GlaobalImages/@Model.Images.ElementAt(8).ImageName" alt=""></div>
+                            }
+                        </div>
+                    </a>
+                    <h3>IPAD</h3>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-md-5 d-flex align-items-stretch mt-4 repararion-content" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card  text-center">
+                    <a asp-area="" asp-controller="Apple" asp-action="MacBookReparationPrisc">
+                        <div class="img-box ">
+                            @if (Model.Images.ElementAt(9).ID == 10)
+                            {
+                                <div class="img"><img src="~/img/GlaobalImages/@Model.Images.ElementAt(9).ImageName" alt=""></div>
+                            }
+                        </div>
+                    </a>
+                    <h3>MACBOOK</h3>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-md-5 d-flex align-items-stretch mt-4 repararion-content" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card  text-center">
+                    <a asp-area="" asp-controller="Apple" asp-action="ImacReparationPrisc">
+                        <div class="img-box ">
+                            @if (Model.Images.ElementAt(10).ID == 11)
+                            {
+                                <div class="img"><img src="~/img/GlaobalImages/@Model.Images.ElementAt(10).ImageName" alt=""></div>
+                            }
+                        </div>
+                    </a>
+                    <h3>IMAK</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+

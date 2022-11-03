@@ -1,0 +1,105 @@
+﻿@model WeeRep.Models.BestilReparationForm 
+
+@{
+    ViewData["Title"] = "BestilReparation";
+}
+<section>
+    <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2></h2>
+            <p>BESTIL REPARATION </p>
+        </div>
+        <div class="form_content">
+            <form asp-action="BestilReparation" asp-controller="Home" method="post">
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Name" class="form-label">Fulde navn</label>
+                        <input asp-for="Name" type="text" id="Name" class="form-control" required />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="Mobil" class="form-label">Tlf nr.</label>
+                        <input asp-for="Mobil" type="number" class="form-control" id="Mobil" required />
+                        <span asp-validation-for="Mobil" id="mobil-error" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Email" class="form-label">Email</label>
+                        <input type="email" asp-for="Email" class="form-control" id="Email" onkeyup="validateEmail()" required />
+                        <span asp-validation-for="Email" id="email-error" class="text-danger"></span>
+                    </div>
+
+
+                    <div class="col mb-3">
+                        <label asp-for="PhonModel" class="form-label">Enhed/Model</label>
+                        <select asp-for="PhonModel" class="form-control" id="PhonModel">
+                            <option selected></option>
+                            <option>Apple</option>
+                            <option> Samsung</option>
+                            <option>Huawei</option>
+                            <option>Motorola</option>
+                            <option>Nokia</option>
+                            <option>Oneplus</option>
+                            <option>Sony</option>
+                        </select>
+                        <span asp-validation-for="PhonModel" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col mb-3 ">
+                        <label asp-for="Dag" class="form-label">Date</label>
+                        <span class="innerdp">
+                            <input asp-for="Dag" type="text" id="datePicker" class="form-control" style="width: 100%;">
+                        </span>
+                        <span asp-validation-for="Dag" class="text-danger"></span>
+                    </div>
+
+                    <div class="col mb-3">
+                        <label asp-for="TimeFrom" class="form-label">Tidspunkt Fra</label>
+                        <span class="innerdp">
+                            <input asp-for="TimeFrom" class="form-control" id="timeStart" type="text" style="width: 100%;" value="" />
+                        </span>
+                        <span asp-validation-for="TimeFrom" class="text-danger"></span>
+                    </div>
+
+                    <div class="col mb-3">
+                        <label asp-for="TimeEnd" class="form-label">Tidspunkt til</label>
+                        <span class="innerdp">
+                            <input asp-for="TimeEnd" class="form-control" id="timeEnd" type="text" style="width: 100%;" />
+                        </span>
+                        <span asp-validation-for="TimeEnd" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Message" class="form-label">Hvad fejler din enhed?</label>
+                    <textarea asp-for="Message" class="form-control" rows="5"></textarea>
+                    <span asp-validation-for="Message" class="text-danger"></span>
+                </div>
+                <div class="text-lg-end">
+                    <button id="Submit" class="btn btn-success" type="submit">Bestil Nu</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</section>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+
+    <!--Sweet Alert 2-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.34/sweetalert2.min.js" integrity="sha512-5nFKfJyu0Zs7sl9v+skSwjHkePWguVrf4yOdwz+3IcvdbLF+4sQKOrU2aLqISATLkM0SAkJzhD5E9I9oPYhweg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.34/sweetalert2.all.js" integrity="sha512-+5IXf00EaeqYdWYO+2701H/Qh/qOZaWAaNYQ0A49Bzx6hX3VI7hVzHWD5iofsmd0eCxBcKK6uf8HqIy4o2UqsA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.34/sweetalert2.all.min.js" integrity="sha512-HTl4tBrbMVVFPxzq2l5FyIedzGnuXpt4ye/7nL04fUDqQTSQLz6MrZzJJU8avbryHT/6b6cjdlV2oaXFTbSw1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.34/sweetalert2.css" integrity="sha512-e+TwvhjDvKqpzQLJ7zmtqqz+5jF9uIOa+5s1cishBRfmapg7mqcEzEl44ufb04BXOsEbccjHK9V0IVukORmO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.34/sweetalert2.js" integrity="sha512-7gEBth/8/vPL96RmzrUQO5CTPpq3Zodip79QUq0JS6NdBEF4soiiw7wH7OOXA3xc8HL/zQGiPPonoqc40Uo+wQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.34/sweetalert2.min.css" integrity="sha512-doewDSLNwoD1ZCdA1D1LXbbdNlI4uZv7vICMrzxfshHmzzyFNhajLEgH/uigrbOi8ETIftUGBkyLnbyDOU5rpA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="~/js/seweet.js"></script>
+    <script src="~/js/site.js"></script>
+}

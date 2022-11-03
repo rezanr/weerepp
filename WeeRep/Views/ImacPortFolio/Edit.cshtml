@@ -1,0 +1,217 @@
+﻿@model WeeRep.Models.AplePortFolioModel.ImacPortFoliModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_PortfolioLayout.cshtml";
+}
+
+
+<div class="container">
+    <div class="section-title">
+        <h2>Edit</h2>
+        <p> Imac </p>
+    </div>
+    <hr />
+    <div class="form_content">
+        <div class="col md-3">
+            <form asp-action="Edit" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row">
+                    <input type="hidden" asp-for="ID" />
+                    <div class="d-flex justify-content-end">
+                        <input type="hidden" asp-for="ImageName" class="form-control" />
+                        <img src="~/img/Apple/Imac/@Model.ImageName" class="img-thumbnail Portfolio-img" alt="@Model.ImageName" />
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="PhoneName" class="form-label"></label>
+                        <input asp-for="PhoneName" class="form-control" />
+                        <span asp-validation-for="PhoneName" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="File" class="form-label"></label>
+                        <input type="file" asp-for="File" class="form-control" />
+                        <span asp-validation-for="File" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Skærm" class="control-label"></label>
+                        <input asp-for="Skærm" class="form-control" />
+                        <span asp-validation-for="Skærm" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Skærm" class="control-label"></label>
+                        <input asp-for="P_Skærm" class="form-control" />
+                        <span asp-validation-for="P_Skærm" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Skærm_B" class="control-label"></label>
+                        <input asp-for="Skærm_B" class="form-control" />
+                        <span asp-validation-for="Skærm_B" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Skærm_B" class="control-label"></label>
+                        <input asp-for="P_Skærm_B" class="form-control" />
+                        <span asp-validation-for="P_Skærm_B" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Batteri" class="control-label"></label>
+                        <input asp-for="Batteri" class="form-control" />
+                        <span asp-validation-for="Batteri" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Batteri" class="control-label"></label>
+                        <input asp-for="P_Batteri" class="form-control" />
+                        <span asp-validation-for="P_Batteri" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Bagglas" class="control-label"></label>
+                        <input asp-for="Bagglas" class="form-control" />
+                        <span asp-validation-for="Bagglas" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Bagglas" class="control-label"></label>
+                        <input asp-for="P_Bagglas" class="form-control" />
+                        <span asp-validation-for="P_Bagglas" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Bagglas_Ramme" class="control-label"></label>
+                        <input asp-for="Bagglas_Ramme" class="form-control" />
+                        <span asp-validation-for="Bagglas_Ramme" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Bagglas_Ramme" class="control-label"></label>
+                        <input asp-for="P_Bagglas_Ramme" class="form-control" />
+                        <span asp-validation-for="P_Bagglas_Ramme" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="ØreHøjtale" class="control-label"></label>
+                        <input asp-for="ØreHøjtale" class="form-control" />
+                        <span asp-validation-for="ØreHøjtale" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_ØreHøjtale" class="control-label"></label>
+                        <input asp-for="P_ØreHøjtale" class="form-control" />
+                        <span asp-validation-for="P_ØreHøjtale" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="front_Kamera" class="control-label"></label>
+                        <input asp-for="front_Kamera" class="form-control" />
+                        <span asp-validation-for="front_Kamera" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_front_Kamera" class="control-label"></label>
+                        <input asp-for="P_front_Kamera" class="form-control" />
+                        <span asp-validation-for="P_front_Kamera" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Bakkamera" class="control-label"></label>
+                        <input asp-for="Bakkamera" class="form-control" />
+                        <span asp-validation-for="Bakkamera" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Bakkamera" class="control-label"></label>
+                        <input asp-for="P_Bakkamera" class="form-control" />
+                        <span asp-validation-for="P_Bakkamera" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Ladestik" class="control-label"></label>
+                        <input asp-for="Ladestik" class="form-control" />
+                        <span asp-validation-for="Ladestik" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Ladestik" class="control-label"></label>
+                        <input asp-for="P_Ladestik" class="form-control" />
+                        <span asp-validation-for="P_Ladestik" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Vibrator" class="control-label"></label>
+                        <input asp-for="Vibrator" class="form-control" />
+                        <span asp-validation-for="Vibrator" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Vibrator" class="control-label"></label>
+                        <input asp-for="P_Vibrator" class="form-control" />
+                        <span asp-validation-for="P_Vibrator" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Højtale" class="control-label"></label>
+                        <input asp-for="Højtale" class="form-control" />
+                        <span asp-validation-for="Højtale" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Højtale" class="control-label"></label>
+                        <input asp-for="P_Højtale" class="form-control" />
+                        <span asp-validation-for="P_Højtale" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Tænd_Sluk" class="control-label"></label>
+                        <input asp-for="Tænd_Sluk" class="form-control" />
+                        <span asp-validation-for="Tænd_Sluk" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Tænd_Sluk" class="control-label"></label>
+                        <input asp-for="P_Tænd_Sluk" class="form-control" />
+                        <span asp-validation-for="P_Tænd_Sluk" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Volume_Lydløs" class="control-label"></label>
+                        <input asp-for="Volume_Lydløs" class="form-control" />
+                        <span asp-validation-for="Volume_Lydløs" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Volume_Lydløs" class="control-label"></label>
+                        <input asp-for="P_Volume_Lydløs" class="form-control" />
+                        <span asp-validation-for="P_Volume_Lydløs" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Fejlfinding" class="control-label"></label>
+                        <input asp-for="Fejlfinding" class="form-control" />
+                        <span asp-validation-for="Fejlfinding" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Fejlfinding" class="control-label"></label>
+                        <input asp-for="P_Fejlfinding" class="form-control" />
+                        <span asp-validation-for="P_Fejlfinding" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="text-lg-end">
+                        <input type="submit" value="Save" class="btn btn-success" />
+
+                    </div>
+                    <a asp-action="Index" class="btn btn-outline-dark">Back to List</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Core.Entities.Images_Tabel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_PortfolioLayout.cshtml";
+}
+
+<div class="container">
+    <div class="section-title">
+        <h2>Home</h2>
+        <p> Images Tabel</p>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ID)
+                </th>
+             
+                <th>
+                    @Html.DisplayNameFor(model => model.ImageName)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID)
+                    </td>              
+                    <td>
+                        <img src="~/img/GlaobalImages/@item.ImageName" class="img-thumbnail Portfolio-img" alt="@item.ImageName" />
+                    </td>
+                    <td class="text-center">
+                        <a asp-action="Edit" asp-route-id="@item.ID"><i class="fas fa-edit"></i></a> |
+                    
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<style>
+    .Portfolio-img {
+        width: 75px;
+        height: 64px;
+    }
+</style>

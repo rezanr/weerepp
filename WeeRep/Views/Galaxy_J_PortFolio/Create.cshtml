@@ -1,0 +1,201 @@
+﻿@model Galaxy_J_PortFolioModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_PortfolioLayout.cshtml";
+}
+
+<div class="container">
+    <div class="section-title">
+        <h2>Create</h2>
+        <p> Galaxy J</p>
+    </div>
+    <div class="form_content">
+        <div class="col md-3">
+            <form asp-action="Create" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="PhoneName" class="form-label"></label>
+                        <input asp-for="PhoneName" class="form-control" />
+                        <span asp-validation-for="PhoneName" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="ImageName" class="form-label"></label>
+                        <input asp-for="File" class="form-control" />
+                        <span asp-validation-for="ImageName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Skærm" class="form-label"></label>
+                        <input asp-for="Skærm" class="form-control" />
+                        <span asp-validation-for="Skærm" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="P_Skærm" class="form-label"></label>
+                        <input asp-for="P_Skærm" class="form-control" />
+                        <span asp-validation-for="P_Skærm" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Batteri" class="form-label"></label>
+                        <input asp-for="Batteri" class="form-control" />
+                        <span asp-validation-for="Batteri" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="P_Batteri" class="form-label"></label>
+                        <input asp-for="P_Batteri" class="form-control" />
+                        <span asp-validation-for="P_Batteri" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Bagglas" class="form-label"></label>
+                        <input asp-for="Bagglas" class="form-control" />
+                        <span asp-validation-for="Bagglas" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="P_Bagglas" class="form-label"></label>
+                        <input asp-for="P_Bagglas" class="form-control" />
+                        <span asp-validation-for="P_Bagglas" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="UV" class="form-label"></label>
+                        <input asp-for="UV" class="form-control" />
+                        <span asp-validation-for="UV" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="P_UV" class="form-label"></label>
+                        <input asp-for="P_UV" class="form-control" />
+                        <span asp-validation-for="P_UV" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Ørehøjtaler" class="form-label"></label>
+                        <input asp-for="Ørehøjtaler" class="form-control" />
+                        <span asp-validation-for="Ørehøjtaler" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="P_Ørehøjtaler" class="form-label"></label>
+                        <input asp-for="P_Ørehøjtaler" class="form-control" />
+                        <span asp-validation-for="P_Ørehøjtaler" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="FrontKamera" class="form-label"></label>
+                        <input asp-for="FrontKamera" class="form-control" />
+                        <span asp-validation-for="FrontKamera" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="P_FrontKamera" class="form-label"></label>
+                        <input asp-for="P_FrontKamera" class="form-control" />
+                        <span asp-validation-for="P_FrontKamera" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Bagkamera" class="form-label"></label>
+                        <input asp-for="Bagkamera" class="form-control" />
+                        <span asp-validation-for="Bagkamera" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="P_Bagkamera" class="form-label"></label>
+                        <input asp-for="P_Bagkamera" class="form-control" />
+                        <span asp-validation-for="P_Bagkamera" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Ladestik" class="form-label"></label>
+                        <input asp-for="Ladestik" class="form-control" />
+                        <span asp-validation-for="Ladestik" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="P_Ladestik" class="form-label"></label>
+                        <input asp-for="P_Ladestik" class="form-control" />
+                        <span asp-validation-for="P_Ladestik" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Højtale" class="form-label"></label>
+                        <input asp-for="Højtale" class="form-control" />
+                        <span asp-validation-for="Højtale" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="P_Højtale" class="form-label"></label>
+                        <input asp-for="P_Højtale" class="form-control" />
+                        <span asp-validation-for="P_Højtale" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Vibrator" class="form-label"></label>
+                        <input asp-for="Vibrator" class="form-control" />
+                        <span asp-validation-for="Vibrator" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="P_Vibrator" class="form-label"></label>
+                        <input asp-for="P_Vibrator" class="form-control" />
+                        <span asp-validation-for="P_Vibrator" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Tænd_Sluk" class="form-label"></label>
+                        <input asp-for="Tænd_Sluk" class="form-control" />
+                        <span asp-validation-for="Tænd_Sluk" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="P_Tænd_Sluk" class="form-label"></label>
+                        <input asp-for="P_Tænd_Sluk" class="form-control" />
+                        <span asp-validation-for="P_Tænd_Sluk" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Volume_Lydløs" class="form-label"></label>
+                        <input asp-for="Volume_Lydløs" class="form-control" />
+                        <span asp-validation-for="Volume_Lydløs" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="P_Volume_Lydløs" class="form-label"></label>
+                        <input asp-for="P_Volume_Lydløs" class="form-control" />
+                        <span asp-validation-for="P_Volume_Lydløs" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col md-3">
+                        <label asp-for="Fejlfinding" class="form-label"></label>
+                        <input asp-for="Fejlfinding" class="form-control" />
+                        <span asp-validation-for="Fejlfinding" class="text-danger"></span>
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="P_Fejlfinding" class="form-label"></label>
+                        <input asp-for="P_Fejlfinding" class="form-control" />
+                        <span asp-validation-for="P_Fejlfinding" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="text-lg-end">
+                        <input type="submit" value="Create" class="btn btn-success" />
+                    </div>
+                    <div>
+                        <a asp-action="Index" class="btn btn-outline-dark">Back to List</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

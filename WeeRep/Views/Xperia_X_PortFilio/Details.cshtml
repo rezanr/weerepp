@@ -1,0 +1,203 @@
+﻿@model Core.Entities.Sony.Xperia_X_Serien
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_PortfolioLayout.cshtml";
+}
+
+    <div class="container">
+        <div class="section-title">
+            <h2>Details</h2>
+            <p> Xperia X </p>
+        </div>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.PhoneName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.PhoneName)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.ImageName)
+            </dt>
+            <dd class="col-sm-10">
+                <img src="~/img/Sony/Xperia_X/@Model.ImageName" class="img-thumbnail Portfolio-img" alt="@Model.ImageName" />
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Skærm)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Skærm)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.P_Skærm)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.P_Skærm)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Batteri)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Batteri)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.P_Batteri)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.P_Batteri)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Bagglas)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Bagglas)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.P_Bagglas)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.P_Bagglas)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Bagglas_Ramme)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Bagglas_Ramme)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.P_Bagglas_Ramme)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.P_Bagglas_Ramme)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Ørehøjtaler)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Ørehøjtaler)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.P_Ørehøjtaler)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.P_Ørehøjtaler)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.FrontKamera)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.FrontKamera)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.P_FrontKamera)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.P_FrontKamera)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Bagkamera)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Bagkamera)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.P_Bagkamera)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.P_Bagkamera)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Ladestik)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Ladestik)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.P_Ladestik)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.P_Ladestik)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Højtale)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Højtale)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.P_Højtale)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.P_Højtale)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Vibrator)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Vibrator)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.P_Vibrator)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.P_Vibrator)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Tænd_Sluk)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Tænd_Sluk)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.P_Tænd_Sluk)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.P_Tænd_Sluk)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Volume_Lydløs)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Volume_Lydløs)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.P_Volume_Lydløs)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.P_Volume_Lydløs)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Fejlfinding)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Fejlfinding)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.P_Fejlfinding)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.P_Fejlfinding)
+            </dd>
+
+        </dl>
+        <div>
+            <a asp-action="Edit" class="btn btn-primary" asp-route-id="@Model.ID">Edit</a>
+            <a asp-action="Index" class="btn btn-outline-dark">Back to List</a>
+        </div>
+    </div>
+    <style>
+        .col-sm-10 {
+            width: 50%;
+        }
+
+        .col-sm-2 {
+            width: 50%;
+        }
+
+        .Portfolio-img {
+            width: 75px;
+            height: 64px;
+        }
+    </style>

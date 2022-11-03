@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeeRep", "WeeRep\WeeRep.csproj", "{36BA32B0-A6CF-4F32-9E77-DFB620112D7A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{635998B6-3935-4386-9108-4E822243CB0A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{D020C588-8B6B-423B-880E-A79B9AFF9E2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36BA32B0-A6CF-4F32-9E77-DFB620112D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36BA32B0-A6CF-4F32-9E77-DFB620112D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36BA32B0-A6CF-4F32-9E77-DFB620112D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36BA32B0-A6CF-4F32-9E77-DFB620112D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{635998B6-3935-4386-9108-4E822243CB0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{635998B6-3935-4386-9108-4E822243CB0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{635998B6-3935-4386-9108-4E822243CB0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{635998B6-3935-4386-9108-4E822243CB0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D020C588-8B6B-423B-880E-A79B9AFF9E2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D020C588-8B6B-423B-880E-A79B9AFF9E2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D020C588-8B6B-423B-880E-A79B9AFF9E2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D020C588-8B6B-423B-880E-A79B9AFF9E2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C34E6F8-E21E-4A64-9AF0-FD4E1A47C319}
+	EndGlobalSection
+EndGlobal

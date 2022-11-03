@@ -1,0 +1,44 @@
+﻿@model GlobalImagesModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_PortfolioLayout.cshtml";
+}
+
+
+<div class="container">
+    <div class="section-title">
+        <h2>Edit</h2>
+        <p> Global Images </p>
+    </div>
+    <hr />
+    <div class="form_content">
+        <div class="col md-3">
+            <form asp-action="Edit" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row">
+                    <input type="hidden" asp-for="ID" />
+                    <div class="d-flex justify-content-end">
+                        <input type="hidden" asp-for="ImageName" class="form-control" />
+                        <img src="~/img/GlaobalImages/@Model.ImageName" class="img-thumbnail Portfolio-img" alt="@Model.ImageName" />
+                    </div>
+                    <div class="col md-3">
+                        <label asp-for="File" class="form-label"></label>
+                        <input type="file" asp-for="File" class="form-control" />
+                        <span asp-validation-for="File" class="text-danger"></span>
+                    </div>
+                </div>
+               
+                <br />
+                <div class="row">
+                    <div class="text-lg-end">
+                        <input type="submit" value="Save" class="btn btn-success" />
+                    </div>
+                    <div>
+                        <a asp-action="Index" class="btn btn-outline-dark">Back to List</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

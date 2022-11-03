@@ -1,0 +1,99 @@
+﻿@model HomeViweModel
+
+@{
+    ViewData["Title"] = "Samsung";
+}
+
+<section>
+    <div class="Phone-container container">
+        <div class="section-title">
+            <h2>REPARATION</h2>
+            <p>Samsung SERIEN</p>
+        </div>
+        <div class="HeroImage">
+            <img src="~/img/clients/Samsung.png" alt="">
+        </div>
+        <p class="content_Text">
+            Hos os kan vi udbedre stort set alle skader på alle Samsung modeller.<br />
+            Vi kan bl.a. tilbyde reparation af ny skærm eller et knust glas til din Samsung – alt efter hvor omfattende skaden er, kan vi have den klar efter 30 minutter.<br />
+            Der tages dog forbehold for væskeskader og diagnoser. Hos os får du livstids garanti på alle udskiftede dele!<br /><br />
+            Vi kan reparere alle typer smartphones og tablets, så hvis din enhed ikke er listet, skal du ikke være bekymret.<br />
+            Kontakt din nærmeste WeeRep butik, for at få en pris på den reparation du har behov for.
+        </p>
+    </div>
+</section>
+<section class="Phone-img-contener">
+    <div class="container" data-aos="fade-up">
+        <div class="row">
+            <div class="col-lg-3 col-md-5 d-flex align-items-stretch mt-4 repararion-content" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card  text-center">
+                    <a asp-area="" asp-controller="Samsung" asp-action="Galaxy_S">
+                        <div class="img-box">
+                            @if (Model.Images.ElementAt(17).ID == 18)
+                            {
+                                <div class="img"><img src="~/img/GlaobalImages/@Model.Images.ElementAt(17).ImageName" alt=""></div>
+                            }
+                        </div>
+                    </a>
+                    <h3>S-SERIEN</h3>
+                </div>
+            </div>
+
+
+            <div class=" col-lg-3 col-md-5 d-flex align-items-stretch mt-4 repararion-content" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card  text-center">
+                    <a asp-area="" asp-controller="Samsung" asp-action="Galaxy_Note">
+                        <div class="img-box">
+                            @if (Model.Images.ElementAt(18).ID == 19)
+                            {
+                                <div class="img"><img src="~/img/GlaobalImages/@Model.Images.ElementAt(18).ImageName" alt=""></div>
+                            }
+                        </div>
+                    </a>
+                    <h3>NOTE-SERIEN</h3>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-md-5 d-flex align-items-stretch mt-4 repararion-content" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card  text-center">
+                    <a asp-area="" asp-controller="Samsung" asp-action="Galaxy_A">
+                        <div class="img-box">
+                            @if (Model.Images.ElementAt(19).ID == 20)
+                            {
+                                <div class="img"><img src="~/img/GlaobalImages/@Model.Images.ElementAt(19).ImageName" alt=""></div>
+                            }
+                        </div>
+                    </a>
+                    <h3>A-SERIEN</h3>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-md-5 d-flex align-items-stretch mt-4 repararion-content" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card  text-center">
+                    <a asp-area="" asp-controller="Samsung" asp-action="Galaxy_J">
+                        <div class="img-box">
+                            @if (Model.Images.ElementAt(20).ID == 21)
+                            {
+                                <div class="img"><img src="~/img/GlaobalImages/@Model.Images.ElementAt(20).ImageName" alt=""></div>
+                            }
+                        </div>
+                    </a>
+                    <h3>J-SERIEN</h3>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-md-5 d-flex align-items-stretch mt-4 repararion-content" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card  text-center">
+                    <a asp-area="" asp-controller="Samsung" asp-action="X_Conver">
+                        <div class="img-box">
+                            @if (Model.Images.ElementAt(21).ID == 22)
+                            {
+                                <div class="img"><img src="~/img/GlaobalImages/@Model.Images.ElementAt(21).ImageName" alt=""></div>
+                            }
+                        </div>
+                    </a>
+                    <h3>XCOVER-SERIEN</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+

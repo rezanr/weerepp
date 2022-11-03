@@ -1,0 +1,195 @@
+﻿@model HomeViweModel
+@{
+    ViewData["Title"] = "WeeRep";
+}
+
+<!-- ======= Hero Section ======= -->
+
+<section>
+    <div class="container-heroimg">
+        @if (Model.Images.ElementAt(0).ID == 1)
+        {
+            <img src="~/img/GlaobalImages/@Model.Images.ElementAt(0).ImageName" alt="@Model.Images.ElementAt(0).ImageName">
+        }
+        <div class="centered " data-aos="fade-up" data-aos-delay="150">
+            <h1>We bring smartphones to life</h1>
+            <h2>Hos WeeRep kan du finde et hav af diverse covers til enhver smag. Vi har covers til alle de store mærker såsom Apple, samsung, huawei og mange flere.</h2>
+        </div>
+    </div>
+</section>
+<!-- End Hero -->
+<!-- ======= Services Section ======= -->
+<section id="Services" class="Services">
+    <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2>Services</h2>
+            <p>Vores services</p>
+        </div>
+        <div class="row">
+            @if (Model.Images.ElementAt(1).ID == 2)
+            {
+                <div class="image col-lg-4"><img src="~/img/GlaobalImages/@Model.Images.ElementAt(1).ImageName" data-aos="fade-right"></div>
+            }
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                    <i class="fas fa-infinity"></i>
+                    <h4>Livstids garanti</h4>
+                    <p> har du den fordel at få livstids garanti på den udførte reparation.</p>
+                </div>
+                <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                    <i class="bi-hourglass-split icon-margen"></i>
+                    <h4>Hurtig reparation</h4>
+                    <p>95% af alle reparationer bliver udført mens du venter</p>
+                </div>
+                <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                    <i class="bi-bar-chart-line-fill"></i>
+                    <h4>Danmarks mest erfarne</h4>
+                    <p>Med flere års erfaring, har vores teknikere repareret utallige enheder og alle tænkelige fejl på enheder</p>
+                </div>
+                <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                    <i class="bi-phone"></i>
+                    <h4>Gratis lånetelefon</h4>
+                    <p>Vi har gratis lånetelefoner til rådighed, i tilfælde af en langvarig reparation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="spes"></section>
+
+<!-- End Services Section -->
+<!-- ======= Clients Section ======= -->
+<section id="clients" class="clients">
+    <div class="container" data-aos="zoom-in">
+        <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="~/img/clients/oneplus.JPG" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/img/clients/samsung.PNG" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/img/clients/Huawei.PNG" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/img/clients/motorala.PNG" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/img/clients/Computer.PNG" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/img/clients/Nokia.PNG" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/img/clients/sony.PNG" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/img/clients/apple.PNG" class="img-fluid" alt=""></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="spes"></section>
+
+<!-- End Clients Section -->
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2>Om Os</h2>
+            <p>Hos WeeRep</p>
+        </div>
+        <div class="row gap-lg-5">
+            <div class="col-lg-5 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+                @if (Model.Images.ElementAt(2).ID == 3)
+                {
+                    <img src="~/img/GlaobalImages/@Model.Images.ElementAt(2).ImageName" class="img-fluid" alt="">
+                }
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 about-content" data-aos="fade-right" data-aos-delay="100">
+                <p class="fst-italic">Kan vi mere end bare tilbyde markedets bedste priser</p>
+                <ul>
+                    <li><i class="ri-check-double-line"></i> Hos OneFone kan vi både tilbyde markedets bedste priser samt give dig den bedste service hele vejen rundt på iPhone reparation</li>
+                    <li><i class="ri-check-double-line"></i>  uanset om du ønsker at købe, sælge eller reparere.</li>
+                    <li><i class="ri-check-double-line"></i> Vi både opkøber samt sælger istandsatte smartphones & tablets og kan reparere alle slags tekniske enheder såsom smartphones, tablets og computere.</li>
+                </ul>
+            <div class="BestilBtn">
+                <a asp-area="" asp-controller="Home" asp-action="BestilReparation" class="btn btn-warning scrollto ">Bestil reparation nu</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
+<!--=====info section===-->
+<section id="info" class="info">
+    <div class="container">
+        <div class="section-title">
+            <h2>Info</h2>
+            <p>VORES SERVICES</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box info-text">
+                    @if (Model.Images.ElementAt(3).ID == 4)
+                    {
+                        <div> <img src="~/img/GlaobalImages/@Model.Images.ElementAt(3).ImageName" width="60%" alt=""></div>
+                    }
+                    <h4>Hurtig og billig reparation af dine enheder</h4>
+                    <p>
+                        Alle vores teknikere er super dygtige samt effektive og har samtlige års erfaring inden for reparationer af elektronik.
+                        De har repareret alt fra en ødelagt skærm til noget software problem. Vi udfører 95% af vores reparationer på stedet og inden for 45 min,
+                        dog stræber vi os efter at være hurtigere og mere efficiente, således du nødigt måtte stå længe uden din enhed.
+                        Vores fokus er altid at gøre kunden tilfreds, derfor arbejder vores tekniker altid på højt gear efter at yde den bedste form for service.
+                        Derudover har vi Danmarks skarpeste og bedste priser til byens bedste kvalitetsprodukter, hvor du endda kan opnå 5% yderlige rabat ved at foretage din booking online via.
+                        vores hjemmeside!<br><br>
+                        Derfor er det nemt, hurtigt og billigt, at få enheden repareret hos WeeRep<br> we bring smarthphones to life!
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box info-text">
+                    @if (Model.Images.ElementAt(4).ID == 5)
+                    {
+                        <div> <img src="~/img/GlaobalImages/@Model.Images.ElementAt(4).ImageName" width="60%" alt=""></div>
+                    }
+                    <h4>iPhone, Mobil, iPad, Tablet og PC reparation!</h4>
+                    <p>
+                        WeeRep teamet er blandt Danmarks dygtigste og mest erfarne reparatør inden for alle elektronik mærker.
+                        Står du derfor med en ødelagt skærm, slidt batteri eller død telefon, kan du fortrøstningsfuld komme forbi en af vores afdelinger i din by,
+                        hvor vi fjerner bekymringerne fra dine skuldre.
+                        Vores teknikere står klar med åbne arme og har til formål at levere din telefon tilbage så god som ny!
+                        Alle vores tekniker arbejder både med iPhones, Androids, iPads, Tablets, PC-reparationer og meget mere.<br><br>
+                        Husk at booke en tid til reparationen online og opnå 5% rabat!
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box info-text">
+                    @if (Model.Images.ElementAt(5).ID == 6)
+                    {
+                        <div> <img src="~/img/GlaobalImages/@Model.Images.ElementAt(5).ImageName" width="60%" alt=""></div>
+                    }
+                    <h4>Reparation af Macbook/iMac</h4>
+                    <p>
+                        Som et nyt koncept er WeeRep blandt de få kæder, der kan hjælpe dig, hvis du har problemer med din MacBook eller iMac.
+                        Reparationer af MacBooks og iMacs har længe været et efterspurgt område fra vores kunde, og vi er i dag ekstrem glade for at kunne tilbyde denne service.
+                        Vi arbejder på daglig basis med bærbare enheder, blandt andet fra Apple,
+                        hvorfor vi i dag kan stå til rådighed og hjælpe dig med stort set alle tænkelige skader på en MacBook eller iMac.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="spes"></section>
+<!--==End Info Section==-->
+<!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials">
+    <div class="container" data-aos="zoom-in">
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <h3>LIVSTIDSGARANTI</h3>
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                            2 ÅR PÅ REFURBISHED ENHEDER <br>LIVSTIDSGARANTI PÅ ALLE REPARATIONER
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Testimonials Section -->

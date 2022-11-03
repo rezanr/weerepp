@@ -1,0 +1,125 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>@ViewData["Title"]</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="~/img/hom/WeeRep.png" rel="icon">
+    <link href="~/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://cdn.syncfusion.com/20.2.0.43/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <!--Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/1.1.9/js/libs/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.syncfusion.com/20.2.0.43/js/web/ej.web.all.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <!-- Vendor CSS Files -->
+    <link href="~/lib/aos/aos.css" rel="stylesheet">
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/lib/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/lib/remixicon/remixicon.css" rel="stylesheet">
+    <link href="~/lib/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="~/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/mobilstyle.css">
+</head>
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-lg-between">
+            <h1 class="logo me-auto me-lg-0"><a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/hom/WeeRep.png" alt=""></a></h1>
+            <div class="col-lg-2 col-md-3"></div>
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    
+                    <li class="dropdown">
+                        <a asp-area="" asp-controller="Home" asp-action="ManufacturesrsReparation"><span>REPARATION & PRISER</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a asp-area="" asp-controller="Apple" asp-action="Apple">APPLE</a></li>
+                            <li><a asp-area="" asp-controller="Samsung" asp-action="Samsung">SAMSUNG</a></li>
+                            <li><a asp-area="" asp-controller="Huawei" asp-action="Huawei">HUAWEI</a></li>
+                            <li><a asp-area="" asp-controller="Oneplus" asp-action="Oneplus">ONEPLUS</a></li>
+                            <li><a asp-area="" asp-controller="Sony" asp-action="Sony">SONY</a></li>
+                            <li><a asp-area="" asp-controller="Motorola" asp-action="Motorola">MOTOROLA</a></li>
+                            <li><a asp-area="" asp-controller="Nokia" asp-action="Nokia">NOKIA</a></li>
+                            <li><a asp-area="" asp-controller="Computer" asp-action="Computer">COMPUTER</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" asp-area="" asp-controller="Home" asp-action="Contact">Kontakt Os</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+            <a class="get-started-btn scrollto" asp-area="" asp-controller="Home" asp-action="BestilReparation">BESTIL REPARATION</a>
+        </div>
+    </header>
+    <section class="spes"></section>
+
+    <!-- End Header -->
+    <div>
+        @RenderBody()
+    </div>
+    @RenderSection("Scripts", required: false)
+    <section class="spes"></section>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div class="col-lg-3 col-md-4 col-sm">
+                        <div class="footer-info">
+                            <div class="FoterImage">
+                                <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/hom/WeeRep.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="social-links mt-3 mb-5">
+                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    @*<div class="col-lg-1 col-md-1 footer-links"></div>*@
+
+                    <div class="col-lg-3 col-md-4 mb-5 col-sm footer-links">                  
+                            <strong>Mobil :</strong> 71 32 99 73<br>
+                            <strong>Email :</strong> info@weerep.dk<br>
+                            <strong>Adresse :</strong> Nøregade 21 D<br>
+                            <strong>By :</strong>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Skive 7800 <br>                       
+                    </div>
+                    @*<div class="col-lg-1 col-md-1 footer-links"></div>*@
+
+                <div class="col-lg-3 col-md-4 col-sm footer-links">
+                    <strong>Mandag -Fradag:</strong> 10:00 - 17:30<br>
+                    <strong>Lørdag  :</strong>  10:00 - 14:00<br>
+                    <strong>Søndag :</strong> &nbsp  &nbsp  &nbsp  &nbsp  &nbsp&nbspLukket  <br>
+                </div>
+                </div>
+                </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="~/lib/purecounter/purecounter_vanilla.js"></script>
+    <script src="~/lib/aos/aos.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/glightbox/js/glightbox.min.js"></script>
+    <script src="~/lib/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/lib/swiper/swiper-bundle.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="~/js/main.js"></script>
+
+
+</body>
+</html>

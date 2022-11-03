@@ -1,0 +1,57 @@
+﻿@model HomeViweModel
+
+@{
+    ViewData["Title"] = "Huawei";
+}
+
+<section>
+    <div class="Phone-container container">
+        <div class="section-title">
+            <h2>REPARATION</h2>
+            <p>Huawei SERIEN</p>
+        </div>
+        <div class="HeroImage">
+            <img src="~/img/clients/Huawei.png" alt="">
+        </div>
+        <p class="content_Text">
+            Er din Huawei smartphone ikke længere brugsdygtig? Du er kommet til det helt rigtige sted, vores side med Huawei smartphone reparationer.
+            Vores hårdtarbejdende og autoriserede teknikere sørger for at få din Huawei smartphone tilbage i perfekt stand.
+            Med i reparationen får du 2 års garanti. Find prisen på din Huawei smartphone reparation herunder.<br /><br />
+            Vi kan reparere alle typer smartphones og tablets, så hvis din enhed ikke er listet, skal du ikke være bekymret.<br />
+            Kontakt din nærmeste OneFone butik, for at få en pris på den reparation du har behov for.
+        </p>
+    </div>
+</section>
+<section class="Phone-img-contener">
+    <div class="container" data-aos="fade-up">
+        <div class="row">
+            <div class=" col-lg-3 col-md-5 d-flex align-items-stretch mt-4 repararion-content" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card  text-center">
+                    <a asp-area="" asp-controller="Huawei" asp-action="Huawei_P">
+                        <div class="img-box">
+                            @if (Model.Images.ElementAt(11).ID == 12)
+                            {
+                                <div class="img"><img src="~/img/GlaobalImages/@Model.Images.ElementAt(11).ImageName" alt=""></div>
+                            }
+                        </div>
+                    </a>
+                    <h3>P-SERIEN</h3>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-md-5 d-flex align-items-stretch mt-4 repararion-content" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card  text-center">
+                    <a asp-area="" asp-controller="Huawei" asp-action="Huawei_Mate">
+                        <div class="img-box">
+                            @if (Model.Images.ElementAt(12).ID == 13)
+                            {
+                                <div class="img"><img src="~/img/GlaobalImages/@Model.Images.ElementAt(12).ImageName" alt=""></div>
+                            }
+                        </div>
+                    </a>
+                    <h3>MATE-SERIEN</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

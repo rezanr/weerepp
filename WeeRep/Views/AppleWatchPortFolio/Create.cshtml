@@ -1,0 +1,131 @@
+﻿@model AppleWatchPortFolioModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_PortfolioLayout.cshtml";
+}
+
+
+<div class="container">
+    <div class="section-title">
+        <h2>Create</h2>
+        <p> Apple Watch</p>
+    </div>
+<hr />
+    <div class="form_content">
+        <div class="col mb-3">
+            <form asp-action="Create" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="PhoneName" class="control-label"></label>
+                        <input asp-for="PhoneName" class="form-control" />
+                        <span asp-validation-for="PhoneName" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="ImageName" class="control-label"></label>
+                        <input type="file" asp-for="File" class="form-control" />
+                        <span asp-validation-for="ImageName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Skærm_A" class="control-label"></label>
+                        <input asp-for="Skærm_A" class="form-control" />
+                        <span asp-validation-for="Skærm_A" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Skærm_A" class="control-label"></label>
+                        <input asp-for="P_Skærm_A" class="form-control" />
+                        <span asp-validation-for="P_Skærm_A" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Skærm_B" class="control-label"></label>
+                        <input asp-for="Skærm_B" class="form-control" />
+                        <span asp-validation-for="Skærm_B" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Skærm_B" class="control-label"></label>
+                        <input asp-for="P_Skærm_B" class="form-control" />
+                        <span asp-validation-for="P_Skærm_B" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Skærm_C" class="control-label"></label>
+                        <input asp-for="Skærm_C" class="form-control" />
+                        <span asp-validation-for="Skærm_C" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Skærm_C" class="control-label"></label>
+                        <input asp-for="P_Skærm_C" class="form-control" />
+                        <span asp-validation-for="P_Skærm_C" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Skærm_D" class="control-label"></label>
+                        <input asp-for="Skærm_D" class="form-control" />
+                        <span asp-validation-for="Skærm_D" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Skærm_D" class="control-label"></label>
+                        <input asp-for="P_Skærm_D" class="form-control" />
+                        <span asp-validation-for="P_Skærm_D" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Batteri_A" class="control-label"></label>
+                        <input asp-for="Batteri_A" class="form-control" />
+                        <span asp-validation-for="Batteri_A" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Batteri_A" class="control-label"></label>
+                        <input asp-for="P_Batteri_A" class="form-control" />
+                        <span asp-validation-for="P_Batteri_A" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Batteri_B" class="control-label"></label>
+                        <input asp-for="Batteri_B" class="form-control" />
+                        <span asp-validation-for="Batteri_B" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="P_Batteri_B" class="control-label"></label>
+                        <input asp-for="P_Batteri_B" class="form-control" />
+                        <span asp-validation-for="P_Batteri_B" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Fejlfinding" class="control-label"></label>
+                        <input asp-for="Fejlfinding" class="form-control" />
+                        <span asp-validation-for="Fejlfinding" class="text-danger"></span>
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="p_Fejlfinding" class="control-label"></label>
+                        <input asp-for="p_Fejlfinding" class="form-control" />
+                        <span asp-validation-for="p_Fejlfinding" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="text-lg-end">
+                        <input type="submit" value="Create" class="btn btn-success" />
+                    </div>
+                    <div>
+                        <a asp-action="Index" class="btn btn-outline-dark">Back to List</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
